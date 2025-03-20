@@ -1,0 +1,75 @@
+* {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0px 4px 6px whitesmoke;
+  color: palevioletred;
+  margin-bottom: 20px;
+}
+
+#timer-box {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#cookie {
+  width: 400px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  border-radius: 50%;
+}
+
+#cookie:active {
+  transform: scale(0.9);
+  filter: drop-shadow(
+    0px 0px 30px rgba(255, 255, 0, 0.8)
+  ); /* Soft circular glow */
+}
+
+#cross {
+  width: 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: none;
+}
+
+/* Score Counter */
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Restart Button */
+#cross {
+  width: 100px;
+  cursor: pointer;
+  margin-top: 15px;
+}
